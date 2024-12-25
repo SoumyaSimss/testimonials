@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Packages - Anything Works</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    /* Global Container */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Header */
+    header {
+      background-color: #333;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header .logo {
+      font-size: 30px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    /* Back to Home Button */
+    .back-home {
+      display: inline-block;
+      padding: 12px 20px;
+      background-color: #27ae60;
+      color: #fff;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 5px;
+      text-align: center;
+      margin-top: 15px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .back-home:hover {
+      background-color: #1f8a44;
+    }
+
+    /* Blog Post Blocks */
+    .packages {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .package {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+      border: 1px solid #ddd;
+    }
+
+    .package:hover {
+      transform: scale(1.05);
+    }
+
+    .package img {
+      width: 100%;
+      border-radius: 8px;
+      height: 200px;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    .package h3 {
+      font-size: 24px;
+      color: #333;
+      margin-top: 15px;
+    }
+
+    .package p {
+      font-size: 16px;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    .package ul {
+      list-style-type: none;
+      padding: 0;
+      margin-bottom: 20px;
+    }
+
+    .package ul li {
+      font-size: 14px;
+      color: #333;
+    }
+
+    .package .cost {
+      font-size: 18px;
+      font-weight: bold;
+      color: #e67e22;
+      margin-top: 10px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header with Back to Home Button -->
+  <header>
+    <div class="logo">Anything Works</div>
+    <a href="index.html" class="back-home">Back to Home</a>
+  </header>
+
+  <!-- Travel Packages Section -->
+  <section class="container packages">
+    <!-- Package 1: Paris -->
+    <div class="package">
+      <img src="https://images.unsplash.com/photo-1569158302-82092647ecfe" alt="Paris">
+      <h3>Paris, France</h3>
+      <ul>
+        <li><strong>Conveyance Cost:</strong> $50/day</li>
+        <li><strong>Residential Cost:</strong> $100/night</li>
+        <li><strong>Tourism Cost:</strong> $200</li>
+        <li><strong>Food Cost:</strong> $30-50/day</li>
+        <li><strong>Visa Cost:</strong> $80</li>
+        <li><strong>Flight Cost:</strong> $800</li>
+        <li><strong>Train Cost:</strong> $10-20</li>
+        <li><strong>Certifications and Documents Required:</strong> Passport, Schengen Visa, Travel Insurance</li>
+      </ul>
+      <p class="cost">Total Estimated Cost: $2500 per person</p>
+    </div>
+
+    <!-- Package 2: Tokyo -->
+    <div class="package">
+      <img src="https://images.unsplash.com/photo-1588623455966-bb5f3e110602" alt="Tokyo">
+      <h3>Tokyo, Japan</h3>
+      <ul>
+        <li><strong>Conveyance Cost:</strong> $60/day</li>
+        <li><strong>Residential Cost:</strong> $120/night</li>
+        <li><strong>Tourism Cost:</strong> $150</li>
+        <li><strong>Food Cost:</strong> $30-50/day</li>
+        <li><strong>Visa Cost:</strong> $30</li>
+        <li><strong>Flight Cost:</strong> $1000</li>
+        <li><strong>Train Cost:</strong> $5-15</li>
+        <li><strong>Certifications and Documents Required:</strong> Passport, Visa, Travel Insurance</li>
+      </ul>
+      <p class="cost">Total Estimated Cost: $2600 per person</p>
+    </div>
+
+    <!-- Package 3: New York -->
+    <div class="package">
+      <img src="https://images.unsplash.com/photo-1521747116042-d6e3b1d7a0da" alt="New York">
+      <h3>New York City, USA</h3>
+      <ul>
+        <li><strong>Conveyance Cost:</strong> $60/day</li>
+        <li><strong>Residential Cost:</strong> $150/night</li>
+        <li><strong>Tourism Cost:</strong> $250</li>
+        <li><strong>Food Cost:</strong> $40-60/day</li>
+        <li><strong>Visa Cost:</strong> $160</li>
+        <li><strong>Flight Cost:</strong> $750</li>
+        <li><strong>Train Cost:</strong> $5-15</li>
+        <li><strong>Certifications and Documents Required:</strong> Passport, Tourist Visa, Travel Insurance</li>
+      </ul>
+      <p class="cost">Total Estimated Cost: $2300 per person</p>
+    </div>
+
+    <!-- Package 4: Rome -->
+    <div class="package">
+      <img src="https://images.unsplash.com/photo-1511942089248-7051a1d35e7f" alt="Rome">
+      <h3>Rome, Italy</h3>
+      <ul>
+        <li><strong>Conveyance Cost:</strong> $40/day</li>
+        <li><strong>Residential Cost:</strong> $90/night</li>
+        <li><strong>Tourism Cost:</strong> $150</li>
+        <li><strong>Food Cost:</strong> $25-40/day</li>
+        <li><strong>Visa Cost:</strong> $80</li>
+        <li><strong>Flight Cost:</strong> $850</li>
+        <li><strong>Train Cost:</strong> $15-30</li>
+        <li><strong>Certifications and Documents Required:</strong> Passport, Schengen Visa, Travel Insurance</li>
+      </ul>
+      <p class="cost">Total Estimated Cost: $2100 per person</p>
+    </div>
+
+    <!-- Package 5: Sydney -->
+    <div class="package">
+      <img src="https://images.unsplash.com/photo-1506157431213-e456b8b7c9f2" alt="Sydney">
+      <h3>Sydney, Australia</h3>
+      <ul>
+        <li><strong>Conveyance Cost:</strong> $50/day</li>
+        <li><strong>Residential Cost:</strong> $120/night</li>
+        <li><strong>Tourism Cost:</strong> $200</li>
+        <li><strong>Food Cost:</strong> $30-50/day</li>
+        <li><strong>Visa Cost:</strong> $150</li>
+        <li><strong>Flight Cost:</strong> $1100</li>
+        <li><strong>Train Cost:</strong> $10-20</li>
+        <li><strong>Certifications and Documents Required:</strong> Passport, Tourist Visa, Travel Insurance</li>
+      </ul>
+      <p class="cost">Total Estimated Cost: $2500 per person</p>
+    </div>
+
+    <!-- Package 6: Barcelona -->
+    <div class="package">
+      <img src="https://images.unsplash.com/photo-1565157035-fbcf66e29961" alt="Barcelona">
+      <h3>Barcelona, Spain</h3>
+      <ul>
+        <li><strong>Conveyance Cost:</strong> $40/day</li>
+        <li><strong>Residential Cost:</strong> $90/night</li>
+        <li><strong>Tourism Cost:</strong> $150</li>
+        <li><strong>Food Cost:</strong> $30-50/day</li>
+        <li><strong>Visa Cost:</strong> $80</li>
+        <li><strong>Flight Cost:</strong> $700</li>
+        <li><strong>Train Cost:</strong> $5-15</li>
+        <li><strong>Certifications and Documents Required:</strong> Passport, Schengen Visa, Travel Insurance</li>
+      </ul>
+      <p class="cost">Total Estimated Cost: $2100 per person</p>
+    </div>
+
+    <!-- Package 7: London -->
+    <div class="package">
+      <img src="https://images.unsplash.com/photo-1521747116042-d6e3b1d7a0da" alt="London">
+      <h3>London, United Kingdom</h3>
+      <ul>
+        <li><strong>Conveyance Cost:</strong> $50/day</li>
+        <li><strong>Residential Cost:</strong> $100/night</li>
+        <li><strong>Tourism Cost:</strong> $250</li>
+        <li><strong>Food Cost:</strong> $30-50/day</li>
+        <li><strong>Visa Cost:</strong> $120</li>
+        <li><strong>Flight Cost:</strong> $850</li>
+        <li><strong>Train Cost:</strong> $10-20</li>
+        <li><strong>Certifications and Documents Required:</strong> Passport, Tourist Visa, Travel Insurance</li>
+      </ul>
+      <p class="cost">Total Estimated Cost: $2200 per person</p>
+    </div>
+    
+    <!-- New Zealand -->
+<div class="package">
+  <img src="https://images.unsplash.com/photo-1572293210371-80d5f52dcb40" alt="New Zealand">
+  <h3>New Zealand</h3>
+  <ul>
+    <li><strong>Conveyance Cost:</strong> $40/day</li>
+    <li><strong>Residential Cost:</strong> $100/night</li>
+    <li><strong>Tourism Cost:</strong> $250</li>
+    <li><strong>Food Cost:</strong> $30-50/day</li>
+    <li><strong>Visa Cost:</strong> $100</li>
+    <li><strong>Flight Cost:</strong> $1300</li>
+    <li><strong>Train Cost:</strong> $15-30</li>
+    <li><strong>Certifications and Documents Required:</strong> Passport, Visitor Visa, Travel Insurance</li>
+  </ul>
+  <p class="cost">Total Estimated Cost: $2200 per person</p>
+</div>
+
+<!-- Mumbai -->
+<div class="package">
+  <img src="https://images.unsplash.com/photo-1562151735-d315b50b4412" alt="Mumbai">
+  <h3>Mumbai, India</h3>
+  <ul>
+    <li><strong>Conveyance Cost:</strong> $20/day</li>
+    <li><strong>Residential Cost:</strong> $60/night</li>
+    <li><strong>Tourism Cost:</strong> $100</li>
+    <li><strong>Food Cost:</strong> $10-20/day</li>
+    <li><strong>Visa Cost:</strong> $50</li>
+    <li><strong>Flight Cost:</strong> $600</li>
+    <li><strong>Train Cost:</strong> $5-10</li>
+    <li><strong>Certifications and Documents Required:</strong> Passport, Tourist Visa, Travel Insurance</li>
+  </ul>
+  <p class="cost">Total Estimated Cost: $1100 per person</p>
+</div>
+
+<!-- Bangalore -->
+<div class="package">
+  <img src="https://images.unsplash.com/photo-1565119263-9d51cc0b9a3b" alt="Bangalore">
+  <h3>Bangalore, India</h3>
+  <ul>
+    <li><strong>Conveyance Cost:</strong> $20/day</li>
+    <li><strong>Residential Cost:</strong> $50/night</li>
+    <li><strong>Tourism Cost:</strong> $80</li>
+    <li><strong>Food Cost:</strong> $15-25/day</li>
+    <li><strong>Visa Cost:</strong> $50</li>
+    <li><strong>Flight Cost:</strong> $550</li>
+    <li><strong>Train Cost:</strong> $5-10</li>
+    <li><strong>Certifications and Documents Required:</strong> Passport, Tourist Visa, Travel Insurance</li>
+  </ul>
+  <p class="cost">Total Estimated Cost: $1000 per person</p>
+</div>
+
+<!-- Lahore -->
+<div class="package">
+  <img src="https://images.unsplash.com/photo-1606397894079-bad617ac5927" alt="Lahore">
+  <h3>Lahore, Pakistan</h3>
+  <ul>
+    <li><strong>Conveyance Cost:</strong> $15/day</li>
+    <li><strong>Residential Cost:</strong> $40/night</li>
+    <li><strong>Tourism Cost:</strong> $80</li>
+    <li><strong>Food Cost:</strong> $10-20/day</li>
+    <li><strong>Visa Cost:</strong> $50</li>
+    <li><strong>Flight Cost:</strong> $500</li>
+    <li><strong>Train Cost:</strong> $5-10</li>
+    <li><strong>Certifications and Documents Required:</strong> Passport, Tourist Visa, Travel Insurance</li>
+  </ul>
+  <p class="cost">Total Estimated Cost: $750 per person</p>
+</div>
+
+<!-- Mauritius -->
+<div class="package">
+  <img src="https://images.unsplash.com/photo-1506743446266-3c63e9e2a82b" alt="Mauritius">
+  <h3>Mauritius</h3>
+  <ul>
+    <li><strong>Conveyance Cost:</strong> $30/day</li>
+    <li><strong>Residential Cost:</strong> $90/night</li>
+    <li><strong>Tourism Cost:</strong> $200</li>
+    <li><strong>Food Cost:</strong> $30-40/day</li>
+    <li><strong>Visa Cost:</strong> $50</li>
+    <li><strong>Flight Cost:</strong> $1200</li>
+    <li><strong>Train Cost:</strong> $10-15</li>
+    <li><strong>Certifications and Documents Required:</strong> Passport, Visa on Arrival, Travel Insurance</li>
+  </ul>
+  <p class="cost">Total Estimated Cost: $2100 per person</p>
+</div>
+
+<!-- Austria -->
+<div class="package">
+  <img src="https://images.unsplash.com/photo-1519974719784-1f9ec10a5a2a" alt="Austria">
+  <h3>Austria</h3>
+  <ul>
+    <li><strong>Conveyance Cost:</strong> $40/day</li>
+    <li><strong>Residential Cost:</strong> $100/night</li>
+    <li><strong>Tourism Cost:</strong> $150</li>
+    <li><strong>Food Cost:</strong> $30-50/day</li>
+    <li><strong>Visa Cost:</strong> $90</li>
+    <li><strong>Flight Cost:</strong> $850</li>
+    <li><strong>Train Cost:</strong> $15-25</li>
+    <li><strong>Certifications and Documents Required:</strong> Passport, Schengen Visa, Travel Insurance</li>
+  </ul>
+  <p class="cost">Total Estimated Cost: $1950 per person</p>
+</div>
+
+<!-- Argentina -->
+<div class="package">
+  <img src="https://images.unsplash.com/photo-1601787634591-3e9b5ec063b5" alt="Argentina">
+  <h3>Argentina</h3>
+  <ul>
+    <li><strong>Conveyance Cost:</strong> $35/day</li>
+    <li><strong>Residential Cost:</strong> $80/night</li>
+    <li><strong>Tourism Cost:</strong> $150</li>
+    <li><strong>Food Cost:</strong> $25-40/day</li>
+    <li><strong>Visa Cost:</strong> $100</li>
+    <li><strong>Flight Cost:</strong> $1100</li>
+    <li><strong>Train Cost:</strong> $10-20</li>
+    <li><strong>Certifications and Documents Required:</strong> Passport, Tourist Visa, Travel Insurance</li>
+  </ul>
+  <p class="cost">Total Estimated Cost: $2000 per person</p>
+</div>
+
+<!-- Brazil -->
+<div class="package">
+  <img src="https://images.unsplash.com/photo-1585370637201-748a320459d4" alt="Brazil">
+  <h3>Brazil</h3>
+  <ul>
+    <li><strong>Conveyance Cost:</strong> $30/day</li>
+    <li><strong>Residential Cost:</strong> $70/night</li>
+    <li><strong>Tourism Cost:</strong> $100</li>
+    <li><strong>Food Cost:</strong> $20-35/day</li>
+    <li><strong>Visa Cost:</strong> $80</li>
+    <li><strong>Flight Cost:</strong> $1000</li>
+    <li><strong>Train Cost:</strong> $5-15</li>
+    <li><strong>Certifications and Documents Required:</strong> Passport, Tourist Visa, Travel Insurance</li>
+  </ul>
+  <p class="cost">Total Estimated Cost: $1900 per person</p>
+</div>
+
+<!-- Amsterdam -->
+<div class="package">
+  <img src="https://images.unsplash.com/photo-1571344761081-1f1240bdf5b5" alt="Amsterdam">
+  <h3>Amsterdam, Netherlands</h3>
+  <ul>
+    <li><strong>Conveyance Cost:</strong> $35/day</li>
+    <li><strong>Residential Cost:</strong> $90/night</li>
+    <li><strong>Tourism Cost:</strong> $100</li>
+    <li><strong>Food Cost:</strong> $25-45/day</li>
+    <li><strong>Visa Cost:</strong> $70</li>
+    <li><strong>Flight Cost:</strong> $750</li>
+    <li><strong>Train Cost:</strong> $10-20</li>
+    <li><strong>Certifications and Documents Required:</strong> Passport, Schengen Visa, Travel Insurance</li>
+  </ul>
+  <p class="cost">Total Estimated Cost: $1600 per person</p>
+</div>
+
+<!-- Ukraine -->
+<div class="package">
+  <img src="https://images.unsplash.com/photo-1516282558198-6c4f3b8f388b" alt="Ukraine">
+  <h3>Ukraine</h3>
+  <ul>
+    <li><strong>Conveyance Cost:</strong> $25/day</li>
+    <li><strong>Residential Cost:</strong> $50/night</li>
+    <li><strong>Tourism Cost:</strong> $120</li>
+    <li><strong>Food Cost:</strong> $15-25/day</li>
+    <li><strong>Visa Cost:</strong> $60</li>
+    <li><strong>Flight Cost:</strong> $650</li>
+    <li><strong>Train Cost:</strong> $5-10</li>
+    <li><strong>Certifications and Documents Required:</strong> Passport, Tourist Visa, Travel Insurance</li>
+  </ul>
+  <p class="cost">Total Estimated Cost: $1000 per person</p>
+</div>
+
+<!-- Ireland -->
+<div class="package">
+  <img src="https://images.unsplash.com/photo-1546967125-0bc87de302dd" alt="Ireland">
+  <h3>Ireland</h3>
+  <ul>
+    <li><strong>Conveyance Cost:</strong> $40/day</li>
+    <li><strong>Residential Cost:</strong> $90/night</li>
+    <li><strong>Tourism Cost:</strong> $180</li>
+    <li><strong>Food Cost:</strong> $25-40/day</li>
+    <li><strong>Visa Cost:</strong> $100</li>
+    <li><strong>Flight Cost:</strong> $750</li>
+    <li><strong>Train Cost:</strong> $10-20</li>
+    <li><strong>Certifications and Documents Required:</strong> Passport, Tourist Visa, Travel Insurance</li>
+  </ul>
+  <p class="cost">Total Estimated Cost: $1500 per person</p>
+</div>
+
+<!-- Melbourne -->
+<div class="package">
+  <img src="https://images.unsplash.com/photo-1590430040091-060d49dbccf1" alt="Melbourne">
+  <h3>Melbourne, Australia</h3>
+  <ul>
+    <li><strong>Conveyance Cost:</strong> $40/day</li>
+    <li><strong>Residential Cost:</strong> $100/night</li>
+    <li><strong>Tourism Cost:</strong> $200</li>
+    <li><strong>Food Cost:</strong> $30-50/day</li>
+    <li><strong>Visa Cost:</strong> $150</li>
+    <li><strong>Flight Cost:</strong> $1100</li>
+    <li><strong>Train Cost:</strong> $10-20</li>
+    <li><strong>Certifications and Documents Required:</strong> Passport, Tourist Visa, Travel Insurance</li>
+  </ul>
+  <p class="cost">Total Estimated Cost: $1800 per person</p>
+</div>
+
+<!-- Belgium -->
+<div class="package">
+  <img src="https://images.unsplash.com/photo-1542191280-0b74ef78b87b" alt="Belgium">
+  <h3>Belgium</h3>
+  <ul>
+    <li><strong>Conveyance Cost:</strong> $30/day</li>
+    <li><strong>Residential Cost:</strong> $80/night</li>
+    <li><strong>Tourism Cost:</strong> $150</li>
+    <li><strong>Food Cost:</strong> $25-40/day</li>
+    <li><strong>Visa Cost:</strong> $75</li>
+    <li><strong>Flight Cost:</strong> $750</li>
+    <li><strong>Train Cost:</strong> $10-15</li>
+    <li><strong>Certifications and Documents Required:</strong> Passport, Schengen Visa, Travel Insurance</li>
+  </ul>
+  <p class="cost">Total Estimated Cost: $1600 per person</p>
+</div>
+
+<!-- Morocco -->
+<div class="package">
+  <img src="https://images.unsplash.com/photo-1504216543929-94a84fa7a8f2" alt="Morocco">
+  <h3>Morocco</h3>
+  <ul>
+    <li><strong>Conveyance Cost:</strong> $25/day</li>
+    <li><strong>Residential Cost:</strong> $60/night</li>
+    <li><strong>Tourism Cost:</strong> $100</li>
+    <li><strong>Food Cost:</strong> $15-30/day</li>
+    <li><strong>Visa Cost:</strong> $50</li>
+    <li><strong>Flight Cost:</strong> $800</li>
+    <li><strong>Train Cost:</strong> $5-10</li>
+    <li><strong>Certifications and Documents Required:</strong> Passport, Tourist Visa, Travel Insurance</li>
+  </ul>
+  <p class="cost">Total Estimated Cost: $1200 per person</p>
+</div>
+
+    
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 Anything Works - All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

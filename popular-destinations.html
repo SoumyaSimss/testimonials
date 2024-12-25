@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anything Works - Travel Packages</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      color: #fff;
+    }
+
+    /* Global Container */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Header */
+    header {
+      background-color: #333;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header .logo {
+      font-size: 30px;
+      font-weight: bold;
+      color: #27ae60;
+    }
+
+    nav {
+      margin-top: 15px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 18px;
+      padding: 8px 15px;
+      background-color: #27ae60;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #1f8a44;
+    }
+
+    /* Tourist Places Section */
+    .tourist-places {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .place {
+      background-color: #222;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+      transition: transform 0.3s;
+    }
+
+    .place img {
+      width: 100%;
+      border-radius: 8px;
+      height: 250px;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    .place h3 {
+      font-size: 24px;
+      color: #27ae60;
+      margin-top: 15px;
+    }
+
+    .place p {
+      color: #bbb;
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    .place ul {
+      list-style-type: none;
+      padding: 0;
+      margin-bottom: 20px;
+    }
+
+    .place ul li {
+      font-size: 16px;
+      color: #fff;
+    }
+
+    /* Hover effect for places */
+    .place:hover {
+      transform: scale(1.05);
+    }
+
+    /* Back to Home Button */
+    .back-home {
+      display: inline-block;
+      padding: 12px 20px;
+      background-color: #27ae60;
+      color: #fff;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 5px;
+      text-align: center;
+      margin: 20px 0;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .back-home:hover {
+      background-color: #1f8a44;
+    }
+
+    /* View Packages Button */
+    .view-packages {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #f39c12;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 5px;
+      text-align: center;
+      margin-top: 15px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .view-packages:hover {
+      background-color: #e67e22;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 60px;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 16px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">Anything Works</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="travel-packages.html">Travel Packages</a>
+      <a href="popular-destinations.html">Popular Destinations</a>
+    </nav>
+  </header>
+
+  <!-- Travel Packages Section -->
+  <section class="container tourist-places">
+    <!-- Place 1: Paris -->
+    <div class="place">
+      <img src="https://images.unsplash.com/photo-1569158302-82092647ecfe" alt="Paris">
+      <h3>Paris, France</h3>
+      <p>Experience the romantic allure of Paris, the City of Lights. With world-class museums, iconic landmarks, and an unforgettable culinary scene, Paris is a must-visit destination for travelers worldwide.</p>
+      <ul>
+        <li><strong>Customer Rating:</strong> 4.8/5</li>
+        <li><strong>Famous Spots:</strong> Eiffel Tower, Louvre Museum, Notre-Dame Cathedral</li>
+        <li><strong>Famous Eateries:</strong> Le Cinq, L'Atelier de Joël Robuchon</li>
+        <li><strong>Conveyance:</strong> Metro, Taxis, Bicycles</li>
+      </ul>
+      <a href="travel-packages.html" class="view-packages">View Packages</a>
+    </div>
+
+    <!-- Place 2: Tokyo -->
+    <div class="place">
+      <img src="https://images.unsplash.com/photo-1588623455966-bb5f3e110602" alt="Tokyo">
+      <h3>Tokyo, Japan</h3>
+      <p>Tokyo blends the modern with the traditional. From high-tech skyscrapers to serene temples, Tokyo is a city of contrasts. Dive into the heart of Japanese culture, history, and cuisine.</p>
+      <ul>
+        <li><strong>Customer Rating:</strong> 4.7/5</li>
+        <li><strong>Famous Spots:</strong> Tokyo Tower, Senso-ji Temple, Shibuya Crossing</li>
+        <li><strong>Famous Eateries:</strong> Sukiyabashi Jiro, Tsukiji Market</li>
+        <li><strong>Conveyance:</strong> Subway, Trains, Taxis</li>
+      </ul>
+      <a href="travel-packages.html" class="view-packages">View Packages</a>
+    </div>
+
+    <!-- Place 3: New York City -->
+    <div class="place">
+      <img src="https://images.unsplash.com/photo-1521747116042-d6e3b1d7a0da" alt="New York City">
+      <h3>New York City, USA</h3>
+      <p>The Big Apple offers endless attractions for tourists. From Broadway shows to Central Park, NYC is the cultural capital of the world. A city that never sleeps, there's always something to do!</p>
+      <ul>
+        <li><strong>Customer Rating:</strong> 4.9/5</li>
+        <li><strong>Famous Spots:</strong> Statue of Liberty, Central Park, Times Square</li>
+        <li><strong>Famous Eateries:</strong> Katz's Delicatessen, The Spotted Pig</li>
+        <li><strong>Conveyance:</strong> Subway, Taxis, Buses</li>
+      </ul>
+      <a href="travel-packages.html" class="view-packages">View Packages</a>
+    </div>
+
+    <!-- Place 4: Rome -->
+    <div class="place">
+      <img src="https://images.unsplash.com/photo-1511942089248-7051a1d35e7f" alt="Rome">
+      <h3>Rome, Italy</h3>
+      <p>Step back in time with a visit to Rome, the Eternal City. Home to ancient ruins, grand churches, and Renaissance art, Rome offers an unparalleled cultural and historical experience.</p>
+      <ul>
+        <li><strong>Customer Rating:</strong> 4.6/5</li>
+        <li><strong>Famous Spots:</strong> Colosseum, Vatican City, Pantheon</li>
+        <li><strong>Famous Eateries:</strong> Da Enzo, Roscioli</li>
+        <li><strong>Conveyance:</strong> Metro, Taxis, Bicycles</li>
+      </ul>
+      <a href="travel-packages.html" class="view-packages">View Packages</a>
+    </div>
+
+    <!-- Place 5: Sydney -->
+    <div class="place">
+      <img src="https://images.unsplash.com/photo-1506157431213-e456b8b7c9f2" alt="Sydney">
+      <h3>Sydney, Australia</h3>
+      <p>Sydney is a bustling metropolis with stunning beaches, iconic landmarks like the Sydney Opera House, and a laid-back lifestyle. Explore nature, culture, and great food in this Aussie gem.</p>
+      <ul>
+        <li><strong>Customer Rating:</strong> 4.7/5</li>
+        <li><strong>Famous Spots:</strong> Sydney Opera House, Bondi Beach, Sydney Harbour Bridge</li>
+        <li><strong>Famous Eateries:</strong> Quay, Tetsuya’s</li>
+        <li><strong>Conveyance:</strong> Ferries, Trains, Buses</li>
+      </ul>
+      <a href="travel-packages.html" class="view-packages">View Packages</a>
+    </div>
+
+    <!-- Place 6: Barcelona -->
+    <div class="place">
+      <img src="https://images.unsplash.com/photo-1523292562844-f1570f8f0dff" alt="Barcelona">
+      <h3>Barcelona, Spain</h3>
+      <p>Barcelona offers a mix of beach relaxation, incredible architecture by Gaudí, and a vibrant art scene. The city's lively culture and Mediterranean atmosphere make it a top destination for tourists.</p>
+      <ul>
+        <li><strong>Customer Rating:</strong> 4.8/5</li>
+        <li><strong>Famous Spots:</strong> Sagrada Família, Park Güell, La Rambla</li>
+        <li><strong>Famous Eateries:</strong> El Celler de Can Roca, Bar Pinotxo</li>
+        <li><strong>Conveyance:</strong> Metro, Bicycles, Taxis</li>
+      </ul>
+      <a href="travel-packages.html" class="view-packages">View Packages</a>
+    </div>
+
+    <!-- Place 7: London -->
+    <div class="place">
+      <img src="https://images.unsplash.com/photo-1506748686211-52bc998b39d6" alt="London">
+      <h3>London, UK</h3>
+      <p>London is rich in history and culture, with landmarks like Big Ben, Buckingham Palace, and the British Museum. This dynamic city is an ideal destination for those seeking history and modern charm.</p>
+      <ul>
+        <li><strong>Customer Rating:</strong> 4.6/5</li>
+        <li><strong>Famous Spots:</strong> Tower of London, Buckingham Palace, London Eye</li>
+        <li><strong>Famous Eateries:</strong> The Ledbury, Dishoom</li>
+        <li><strong>Conveyance:</strong> Tube, Buses, Taxis</li>
+      </ul>
+      <a href="travel-packages.html" class="view-packages">View Packages</a>
+    </div>
+
+    <!-- Place 8: Dubai -->
+    <div class="place">
+      <img src="https://images.unsplash.com/photo-1592267794137-3c25b743f530" alt="Dubai">
+      <h3>Dubai, UAE</h3>
+      <p>Dubai offers an ultra-modern skyline, luxury shopping, and world-class attractions. From the Burj Khalifa to Palm Jumeirah, Dubai is an ideal destination for a lavish vacation.</p>
+      <ul>
+        <li><strong>Customer Rating:</strong> 4.7/5</li>
+        <li><strong>Famous Spots:</strong> Burj Khalifa, Dubai Mall, Palm Jumeirah</li>
+        <li><strong>Famous Eateries:</strong> Al Mahara, Nobu</li>
+        <li><strong>Conveyance:</strong> Metro, Taxis, Buses</li>
+      </ul>
+      <a href="travel-packages.html" class="view-packages">View Packages</a>
+    </div>
+
+    <!-- Place 9: Cape Town -->
+    <div class="place">
+      <img src="https://images.unsplash.com/photo-1533166611258-b2a8c648f00c" alt="Cape Town">
+      <h3>Cape Town, South Africa</h3>
+      <p>Cape Town is known for its stunning landscapes, including Table Mountain and its beautiful beaches. It's a destination that combines adventure, nature, and a rich cultural heritage.</p>
+      <ul>
+        <li><strong>Customer Rating:</strong> 4.8/5</li>
+        <li><strong>Famous Spots:</strong> Table Mountain, Robben Island, Kirstenbosch Gardens</li>
+        <li><strong>Famous Eateries:</strong> The Test Kitchen, La Colombe</li>
+        <li><strong>Conveyance:</strong> Trains, Buses, Taxis</li>
+      </ul>
+      <a href="travel-packages.html" class="view-packages">View Packages</a>
+    </div>
+
+  </section>
+
+  <!-- Back to Home Button -->
+  <div class="container">
+    <a href="index.html" class="back-home">Back to Home</a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Anything Works Travel Agency</p>
+  </footer>
+
+</body>
+</html>
